@@ -1,0 +1,10 @@
+<h1>cambiar perfil</h1>
+<h1>{{ usuario }}</h1>
+
+<form action="" method="POST"> {% csrf_token %}
+    <table>
+      {{ formulario.as_table }}
+    </table>
+    <input type="submit" value="editar">
+</form>
+

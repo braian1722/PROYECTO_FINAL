@@ -1,0 +1,23 @@
+{% extends "../index.html" %}
+
+{% load static %}
+
+
+<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+{% block contenido %}  
+
+    {% for jean in jeans %}
+        <li>
+            {{jean}}
+            <a href="/local_de_ropa/update_jean/{{jean.id}}" class="btn btn-warning">EDIT</a>
+            <a href="/local_de_ropa/delete_jean/{{jean.id}}" class="btn btn-danger">DELETE</a>
+    
+        </li>
+        <br>
+    {%endfor%}
+    
+    
+    <a class="btn btn-success" href="/local_de_ropa/create_jeans">AGREGAR REMERA</a>
+
+
+{% endblock %}    

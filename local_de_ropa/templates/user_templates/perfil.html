@@ -1,0 +1,24 @@
+{% extends "index.html" %}
+
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+
+{% block contenido %} <!--posicion que ocupa en el archivo padre osea inico html-->
+
+    <div>
+        <ul>
+           <li>{{user.username}}</li>
+           <li>{{user.email}}</li>
+           <li>{{user.first_name}}</li>
+           <li>{{user.last_name}}</li>
+
+        </ul>
+        <a  class="btn btn-success" style="text-decoration:none;color:aqua" href="/local_de_ropa/perfil/editarPerfil">EDITAR PERFIL</a>
+        <a class="btn btn-success" style="text-decoration:none;color:black" href="/local_de_ropa/perfil/chance_pass">EDITAR PASSWORD</a>
+        <a class="btn btn-success" style="text-decoration:none;color:black" href="/local_de_ropa/perfil/chanceavatar">EDITAR FOTO</a>
+
+
+    </div>
+
+{% endblock %}    

@@ -1,0 +1,103 @@
+
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/MiEstilo.css' %}">
+    <title>productos</title>
+</head>
+
+
+<body>
+    {% block contenido%}
+    
+  <UL style="position:absolute ;left:0px">
+    <h1>REMERAS</h1>    
+        <li>
+            <p>REMERA LISA</p>
+            <a class="btn btn-success" href="/local_de_ropa/compra"> 1500 COMPRAR</a>
+        </li>
+    
+        <li>
+            <p>REMERA ESTAPADA</p>
+            <a class="btn btn-success" href="/local_de_ropa/compra"> 2000 COMPRAR</a>
+        </li>
+    
+        <li>
+            <p>REMERA LISA</p>
+            <a class="btn btn-success" href="/local_de_ropa/compra"> 3000 COMPRAR</a>
+        </li>
+    </UL>
+
+    
+  <UL style="position:absolute ;left:300px">
+        <h1>BUZOS </h1>
+        <li>
+            <p>BUZO LISO</p>
+            <a class="btn btn-success" href="/local_de_ropa/compra"> 2000 COMPRAR</a>
+        </li>
+    
+        <li>
+            <p>BUZO ESTAMPADO</p>
+            <a class="btn btn-success" href="/local_de_ropa/compra"> 5000 COMPRAR</a>
+        </li>
+    
+        <li>
+            <p>BUZO CON CAPUCHA</p>
+            <a class="btn btn-success" href="/local_de_ropa/compra"> 3220 COMPRAR</a>
+        </li>
+    </UL>
+
+
+    <UL style="position:absolute ;right:500px">
+        <h1>CAMPERAS </h1>
+        <li>
+            <p>CAMPERA ROMPEVIENTOS</p>
+            <a class="btn btn-success" href="/local_de_ropa/compra"> 4500 COMPRAR</a>
+        </li>
+    
+        <li>
+            <p>CAMPERA FRIZA</p>
+            <a class="btn btn-success" href="/local_de_ropa/compra"> 5000 COMPRAR</a>
+        </li>
+    
+        <li>
+            <p>CAMPERON</p>
+            <a class="btn btn-success" href="/local_de_ropa/compra"> 9000 COMPRAR</a>
+        </li>
+    </UL>
+
+    <UL style="position:absolute ;right:300px">
+        <h1>JEANS</h1>
+        <li>
+            <p>JEAN CHUPIN</p>
+            <a class="btn btn-success" href="/local_de_ropa/compra"> 4500 COMPRAR</a>
+        </li>
+    
+        <li>
+            <p>JEAN CLASICO</p>
+            <a class="btn btn-success" href="/local_de_ropa/compra"> 3000 COMPRAR</a>
+        </li>
+    
+        <li>
+            <p>JEAN TIRO ALTO</p>
+            <a class="btn btn-success" href="/local_de_ropa/compra"> 5000 COMPRAR</a>
+        </li>
+    </UL>
+    
+    
+    {%endblock%}
+
+    
+
+
+
+    
+</body>
+</html>

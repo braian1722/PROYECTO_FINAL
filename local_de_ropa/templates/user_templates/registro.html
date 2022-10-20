@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registro</title>
+</head>
+<body>
+    <form method="POST">
+        {% csrf_token %}
+
+        {{formulario.as_p}}  <!--formulario automatico-->
+        
+        <button type="submit">registrar</button>
+        <br>
+
+    </form>
+    
+
+
+
+</body>
+</html>

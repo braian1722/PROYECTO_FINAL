@@ -1,0 +1,15 @@
+{%load static%}
+<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+<link rel="stylesheet" href="{% static 'css/MiEstilo.css' %}">
+
+<form class="formDataCamperas" method="POST" action="/local_de_ropa/create_campera/"> {% csrf_token  %}
+    <input type="text" name="modelo" placeholder="modelo">
+    <input type="text" name="marca" placeholder="marca">
+    <input type="text" name="talle" placeholder="talle">
+    <input type="text" name="color" placeholder="color">
+    <input type="number" name="stock" placeholder="stock">
+
+    <button type="submit" class="btn btn-primary btndj">MODIFICAR</button>
+
+
+</form>

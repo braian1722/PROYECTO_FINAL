@@ -1,0 +1,23 @@
+{% extends "../index.html" %}
+
+{% load static %}
+
+
+<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+{% block contenido %}  
+
+    {% for campera in camperas %}
+        <li>
+            {{campera}}
+            <a href="/local_de_ropa/update_campera/{{campera.id}}" class="btn btn-warning">EDIT</a>
+            <a href="/local_de_ropa/delete_campera/{{campera.id}}" class="btn btn-danger">DELETE</a>
+    
+        </li>
+        <br>
+    {%endfor%}
+    
+    
+    <a class="btn btn-success" href="/local_de_ropa/create_campera">AGREGAR CAMPERA</a>
+
+
+{% endblock %}    
